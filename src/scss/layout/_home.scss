@@ -1,0 +1,19 @@
+@use '../utils/' as size;
+
+.home {
+    &__title {
+        font-size: 4rem;
+        text-align: center;
+
+        @include size.breakpoint(md) {
+            font-size: 8rem;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}

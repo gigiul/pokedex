@@ -1,0 +1,170 @@
+/* @use '../utils/' as size;
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin: auto;
+
+    &__title {
+        text-align: center;
+        margin-top: 100px;
+
+        @include size.breakpoint(md) {
+            font-size: 8rem;
+        }
+
+    }
+
+    &__image {
+        display: flex;
+        flex-direction: row;
+
+        &__size {
+            width: 12rem;
+            height: 12rem;
+
+            @include size.breakpoint(md) {
+                width: 16rem;
+                height: 16rem;
+            }
+        }
+
+    }
+
+    &__infos {
+        width: 100%;
+        height: auto;
+        background-color: var(--dark-red);
+        border-radius: 15px;
+        font-size: 2rem;
+        color: var(--yellow);
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+
+        @include size.breakpoint(lg) {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: start;
+            margin-top: 1rem;
+            max-width: 80%;
+        }
+
+
+        &__bmi {
+            text-transform: capitalize;
+
+            margin-top: 2rem;
+
+            @include size.breakpoint(lg) {
+               margin-top: 0rem;
+            }
+
+            &__title {
+                color: var(--orange);
+            }
+
+            &__wh {
+                display: flex;
+                justify-content: center;
+                
+                gap: 1rem;
+                font-size: 1.5rem;
+
+                @include size.breakpoint(lg) {
+                    flex-direction: column;
+                    text-align: left;
+                }
+            }
+        }
+
+        &__abilities {
+            text-transform: capitalize;
+            &__title {
+                color: var(--orange)
+            }
+
+            &__list {
+                font-size: 1.5rem;
+                text-align: center;
+
+                &__item {
+                    text-align:left;
+                }
+            }
+
+
+        }
+
+        &__moves {
+            text-transform: capitalize;
+            &__title {
+                color: var(--orange)
+            }
+
+            &__list {
+                font-size: 1.5rem;
+                text-align: center;
+
+                &__item {
+                    text-align:left;
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+        }
+
+        &__types {
+            text-transform: capitalize;
+            &__title {
+                color: var(--orange)
+            }
+
+            &__list {
+                font-size: 1.5rem;
+                text-align: center;
+                
+                &__item {
+
+                }
+            }
+
+        }
+
+
+        
+    }
+}
+
+.backArrow {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    text-decoration: none;
+    color: var(--red-1);
+    font-size: 30px;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    border: 2px;
+    border-color: rgba(255, 255, 255, 0.589);
+    border-style: solid;
+    padding: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: var(--dark-red);
+        border-color: white;
+    }
+
+}
+ */

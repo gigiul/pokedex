@@ -1,0 +1,56 @@
+.card {
+    background-color: var(--dark-red);
+    width: 16rem;
+    height: 20rem;
+    border-radius: 15px;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    
+    &__title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        background: var(--text-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 1rem;    
+    }
+
+    &__image {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    &__abilityContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.2rem;
+        font-size: 1.3rem;
+        color: var(--red);
+
+        &__ability {
+            color: var(--red-1);
+            text-transform: capitalize;
+            
+        }
+    }
+}
